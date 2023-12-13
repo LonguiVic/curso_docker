@@ -8,7 +8,7 @@ services:
     restart: always
     env_file:
       - ./config/db.env
-    networks:
+    networks: # Rede
       - backend
 
   wordpress:
@@ -20,7 +20,7 @@ services:
     restart: always
     env_file:
       - ./config/wp.env
-    networks:
+    networks: # Rede
       - backend
 
 volumes:
